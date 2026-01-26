@@ -4,9 +4,9 @@
 
 <h1 align="center">Hi 👋, I'm Mohammed Aintomar</h1>
 
-<p align="center">
+<h2 align="center">
   A passionate Software Engineer from Morocco 🇲🇦
-</p>
+</h2>
 
 
 

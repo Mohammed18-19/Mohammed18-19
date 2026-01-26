@@ -1,5 +1,8 @@
+https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnNncXdqM3AwcWUzOXVmeHhjenNpOW1hNGFhcDR4azI1MzcyYnZyNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/78XCFBGOlS6keY1Bil/giphy.gif
+
+
 # 💫 About Me:
-Hi! I’m Ain Tomar Mohammed, a passionate software engineer and lifelong problem solver. I love turning ideas into code and building projects that are clean, efficient, and impactful.<br><br>💻 What I do:<br><br>Full-stack development with Python, Flask, Django, and PostgreSQL<br><br>Backend architecture & system design<br><br>Data analysis and automation with pandas & Python scripting<br><br>Exploring cutting-edge tech like AI, web3, and cloud computing<br><br>🚀 My mission:<br>To learn constantly, create meaningful projects, and leave a mark in the tech world.<br><br>🎯 Fun fact:<br>I’m equally comfortable running in the forest, diving into coding, or exploring new cultures.<br><br>Let’s build something awesome together! 🌟
+Hi! I’m Mohammed, a passionate software engineer and lifelong problem solver. I love turning ideas into code and building projects that are clean, efficient, and impactful.<br><br>💻 What I do:<br><br>Full-stack development with Python, Flask, Django, and PostgreSQL<br><br>Backend architecture & system design<br><br>Data analysis and automation with pandas & Python scripting<br><br>Exploring cutting-edge tech like AI, web3, and cloud computing<br><br>🚀 My mission:<br>To learn constantly, create meaningful projects, and leave a mark in the tech world.<br><br>🎯 Fun fact:<br>I’m equally comfortable running in the forest, diving into coding, or exploring new cultures.<br><br>Let’s build something awesome together! 🌟
 
 
 ## 🌐 Socials:

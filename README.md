@@ -2,7 +2,7 @@
   <img src="assets/avatar.gif" width="180" />
 </p>
 
-<h1 align="center">Hi 👋, I'm Mohamed EL MACHHOUNE</h1>
+<h1 align="center">Hi 👋, I'm Mohammed Aintomar</h1>
 
 <p align="center">
   A passionate Software Engineer from Morocco 🇲🇦

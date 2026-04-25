@@ -1,6 +1,5 @@
 <div align="center">
-<img src="https://raw.githubusercontent.com/Mohammed18-19/Mohammed18-19/main/assets/AINTORA_SYSTEMS_logo.png" width="100"/>
-
+<img src="https://raw.githubusercontent.com/Mohammed18-19/Mohammed18-19/main/AINTORA_LinkedIn_Banner.png" width="600"/>
 <h2>Mohammed Aintomar</h2>
 
 <p><strong>Founder & CEO — AINTORA SYSTEMS</strong></p>

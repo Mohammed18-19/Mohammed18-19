@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Mohammed18-19/Mohammed18-19/main/logo.png" width="90"/>
+<img src="https://raw.githubusercontent.com/Mohammed18-19/Mohammed18-19/main/logo.png" width="100"/>
 
 <h2>Mohammed Aintomar</h2>
 
@@ -10,10 +10,11 @@
 
 <p>
   <a href="https://linkedin.com/in/mohammed-aintomar-a94a37262">
-    <img src="https://img.shields.io/badge/LinkedIn-Mohammed_Aintomar-0A66C2?style=flat&logo=linkedin"/>
+    <img src="https://img.shields.io/badge/LinkedIn-Mohammed_Aintomar-0A66C2?style=flat&logo=linkedin&logoColor=white"/>
   </a>
   <img src="https://img.shields.io/badge/Location-Kenitra,_Morocco-c44fd4?style=flat"/>
   <img src="https://img.shields.io/badge/Status-Building-00c6d4?style=flat"/>
+  <img src="https://img.shields.io/badge/Age-20-534AB7?style=flat"/>
 </p>
 
 </div>
@@ -24,7 +25,7 @@
 
 I build AI systems that replace manual work — silently, reliably, 24/7.
 
-At 20, I founded **AINTORA SYSTEMS** from Morocco with one mission:
+At 20, I founded **AINTORA SYSTEMS** from Morocco with one mission:  
 make AI automation accessible to every local business, not just Silicon Valley startups.
 
 ---
@@ -33,9 +34,9 @@ make AI automation accessible to every local business, not just Silicon Valley s
 
 | Project | Description | Stack | Status |
 |---|---|---|---|
-| **BookBot** | WhatsApp AI booking engine for salons & clinics | Python, Flask, Gemini, Meta API | 🟢 Live |
-| **AINTORA OS** | AI operating system for local SMEs | Python, PostgreSQL, n8n | 🔨 Building |
-| **Ausbildung Agent** | AI-powered job search dashboard | React, Vite, Gemini API | 🔨 Building |
+| **BookBot** | WhatsApp AI booking engine for salons & clinics | Python · Flask · Gemini · Meta API | 🟢 Live |
+| **AINTORA OS** | AI operating system for local SMEs | Python · PostgreSQL · n8n | 🔨 Building |
+| **Ausbildung Agent** | AI-powered job search dashboard | React · Vite · Gemini API | 🔨 Building |
 
 ---
 
@@ -65,11 +66,24 @@ make AI automation accessible to every local business, not just Silicon Valley s
 
 ## Experience
 
+```
+Founder & CEO · AINTORA SYSTEMS · 2024 – Present
+Kenitra, Morocco · Remote-first
+
+→ Built BookBot: WhatsApp AI booking engine deployed for
+  salons and clinics across Morocco
+→ Multi-tenant SaaS architecture with per-client
+  WhatsApp credentials and dynamic webhook routing
+→ LLM integration: Gemini API for natural language
+  booking flows in Arabic, Darija, French & English
+→ Expanding: Morocco → Gulf → Germany
+```
+
 ---
 
 ## Mission
 
-Make AI automation accessible to every local business —
+Make AI automation accessible to every local business —  
 not just funded startups.
 
 **Morocco → Gulf → Europe.**

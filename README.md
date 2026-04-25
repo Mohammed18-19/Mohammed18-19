@@ -64,3 +64,24 @@ make AI automation accessible to every local business, not just Silicon Valley s
 ---
 
 ## Experience
+
+---
+
+## Mission
+
+Make AI automation accessible to every local business —
+not just funded startups.
+
+**Morocco → Gulf → Europe.**
+
+---
+
+<div align="center">
+
+📍 Kenitra, Morocco &nbsp;·&nbsp;
+🌐 aintora.ai &nbsp;·&nbsp;
+✉️ aintomar.mohamed19@gmail.com
+
+<sub>Building in public. Shipping real products. Starting from zero.</sub>
+
+</div>

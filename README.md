@@ -1,25 +1,23 @@
 <div align="center">
-<img src="https://raw.githubusercontent.com/Mohammed18-19/Mohammed18-19/main/AINTORA_LinkedIn_Banner.png" width="600"/>
-<h2>Mohammed Aintomar</h2>
 
-<p><strong>Founder & CEO — AINTORA SYSTEMS</strong></p>
+<img src="https://raw.githubusercontent.com/Mohammed18-19/Mohammed18-19/main/assets/AINTORA_SYSTEMS_logo.png" width="120" alt="AINTORA SYSTEMS"/>
 
-<p><em>"Your smartest employee never clocks out."</em></p>
+# Mohammed Aintomar
 
-<p>
-  <a href="https://linkedin.com/in/mohammed-aintomar-a94a37262">
-    <img src="https://img.shields.io/badge/LinkedIn-Mohammed_Aintomar-0A66C2?style=flat&logo=linkedin&logoColor=white"/>
-  </a>
-  <img src="https://img.shields.io/badge/Location-Kenitra,_Morocco-c44fd4?style=flat"/>
-  <img src="https://img.shields.io/badge/Status-Building-00c6d4?style=flat"/>
-  <img src="https://img.shields.io/badge/Age-20-534AB7?style=flat"/>
-</p>
+### Founder & CEO — AINTORA SYSTEMS
+
+*"Your smartest employee never clocks out."*
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Mohammed_Aintomar-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/mohammed-aintomar-a94a37262)
+[![Location](https://img.shields.io/badge/Kenitra-Morocco-c44fd4?style=flat)](https://github.com/Mohammed18-19)
+[![Status](https://img.shields.io/badge/Status-Building-00c6d4?style=flat)](https://github.com/Mohammed18-19)
+[![Age](https://img.shields.io/badge/Age-20-534AB7?style=flat)](https://github.com/Mohammed18-19)
 
 </div>
 
 ---
 
-## What I build
+## 🚀 What I build
 
 I build AI systems that replace manual work — silently, reliably, 24/7.
 
@@ -28,17 +26,17 @@ make AI automation accessible to every local business, not just Silicon Valley s
 
 ---
 
-## Current projects
+## 📦 Current projects
 
 | Project | Description | Stack | Status |
 |---|---|---|---|
-| **BookBot** | WhatsApp AI booking engine for salons & clinics | Python · Flask · Gemini · Meta API | 🟢 Live |
+| **[BookBot](https://github.com/Mohammed18-19/Chatboot-Saas)** | WhatsApp AI booking engine for salons & clinics | Python · Flask · Gemini · Meta API | 🟢 Live |
 | **AINTORA OS** | AI operating system for local SMEs | Python · PostgreSQL · n8n | 🔨 Building |
 | **Ausbildung Agent** | AI-powered job search dashboard | React · Vite · Gemini API | 🔨 Building |
 
 ---
 
-## Stack
+## 🛠️ Stack
 
 **Backend**
 
@@ -62,7 +60,7 @@ make AI automation accessible to every local business, not just Silicon Valley s
 
 ---
 
-## Experience
+## 💼 Experience
 
 ```
 Founder & CEO · AINTORA SYSTEMS · 2024 – Present
@@ -79,7 +77,7 @@ Kenitra, Morocco · Remote-first
 
 ---
 
-## Mission
+## 🎯 Mission
 
 Make AI automation accessible to every local business —  
 not just funded startups.
@@ -90,10 +88,8 @@ not just funded startups.
 
 <div align="center">
 
-📍 Kenitra, Morocco &nbsp;·&nbsp;
-🌐 aintora.ai &nbsp;·&nbsp;
-✉️ aintomar.mohamed19@gmail.com
+📍 Kenitra, Morocco &nbsp;·&nbsp; 🌐 aintora.ai &nbsp;·&nbsp; ✉️ aintomar.mohamed19@gmail.com
 
-<sub>Building in public. Shipping real products. Starting from zero.</sub>
+*Building in public. Shipping real products. Starting from zero.*
 
 </div>

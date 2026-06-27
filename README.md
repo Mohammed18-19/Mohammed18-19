@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="banner.png" width="100%" alt="Mohammed Ain Tomar — Backend Engineer"/>
+  <img src="assets/banner.png" width="100%" alt="Mohammed Ain Tomar — Backend Engineer"/>
 </div>
 
 <div align="center">

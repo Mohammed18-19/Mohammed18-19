@@ -2,116 +2,46 @@
   <img src="assets/banner.png" width="100%" alt="Mohammed Ain Tomar — Backend Engineer"/>
 </div>
 
-<div align="center">
+<br/>
 
-[![Email](https://img.shields.io/badge/aintomar.mohammed200@gmail.com-111827?style=flat&logo=gmail&logoColor=EA4335)](mailto:aintomar.mohammed200@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-111827?style=flat&logo=linkedin&logoColor=3B82F6)](https://linkedin.com/in/mohammed-ain-tomar)
-[![InvoiceBot](https://img.shields.io/badge/getinvoicebot.com-live-10B981?style=flat&labelColor=111827)](https://getinvoicebot.com)
+I'm a backend engineer based in Morocco, building production software with Python, Flask, and PostgreSQL.
 
-</div>
+My focus is on systems that do real work — automated workflows, scheduled jobs, payment lifecycles, REST APIs that handle actual business logic. I'm not interested in tutorial projects. Every system I build is deployed and running.
 
----
-
-Backend engineer focused on REST APIs, relational databases, and background job systems. I build software that automates real business operations and runs in production.
-
-Based in Morocco. Targeting backend engineering positions in Germany from 2026.
+I'm currently preparing to relocate to Germany, where I intend to work as a backend engineer and keep building.
 
 ---
 
-## InvoiceBot
+## What I've built
 
-> Production SaaS that automates invoice reminder workflows for small businesses — [getinvoicebot.com](https://getinvoicebot.com)
+**[InvoiceBot](https://getinvoicebot.com)** — A production SaaS that automates invoice reminder workflows for small businesses. Handles scheduling, email delivery, subscription billing, and payment webhooks without manual intervention. Built with Flask, PostgreSQL, APScheduler, Brevo SMTP, and Lemon Squeezy. Live.
 
-Small businesses lose revenue to unpaid invoices. Manual follow-up is inconsistent and doesn't scale. InvoiceBot removes that dependency entirely — once an invoice is issued, the reminder lifecycle runs without human intervention.
-
-**Architecture.**
-
-```
-                         ┌─────────────────────────────┐
-                         │        Flask REST API        │
-Client ── HTTPS ────────►│                             │
-                         │  Auth · Business Logic       │
-                         │  Invoice State · Webhooks    │
-                         └──────────┬──────────────────┘
-                                    │
-              ┌─────────────────────┼──────────────────┐
-              ▼                     ▼                  ▼
-       ┌─────────────┐    ┌──────────────────┐  ┌──────────────────┐
-       │  PostgreSQL  │    │   APScheduler    │  │  Lemon Squeezy   │
-       │             │    │                  │  │                  │
-       │ Users        │    │ Polling engine   │  │ Subscriptions    │
-       │ Invoices     │    │ Reminder jobs    │  │ Billing events   │
-       │ Reminders    │    │ Status checks    │  │ Webhook ingestion│
-       └─────────────┘    └────────┬─────────┘  └──────────────────┘
-                                   │
-                                   ▼
-                          ┌──────────────────┐
-                          │   Brevo SMTP     │
-                          │                  │
-                          │ Transactional    │
-                          │ email delivery   │
-                          └──────────────────┘
-
-                     Deployed on Render · Linux · Production
-```
-
-**Engineering decisions.**
-
-*APScheduler over cron.* The reminder engine needs direct access to application state and database connections during execution. Running APScheduler in-process lets scheduled jobs reuse the existing SQLAlchemy session pool and eliminates subprocess startup overhead on every invocation.
-
-*Lemon Squeezy over Stripe.* Stripe merchant payouts are unavailable in Morocco. Lemon Squeezy operates as Merchant of Record, handling tax obligations and payouts across MENA without requiring a foreign legal entity. Hard infrastructure constraint, not a preference.
-
-*Invoice state as a PostgreSQL enum.* Lifecycle transitions (`draft → sent → reminded → overdue → paid`) are modeled as a native enum with application-level transition guards. Invalid state changes are structurally prevented, and reminder scheduling logic stays deterministic.
-
-*SMTP over a hosted transactional API.* Brevo SMTP keeps per-message cost near zero at current scale. The delivery layer is abstracted behind a single interface — migrating to a higher-volume provider is a one-file change.
-
-**Stack.**
-
-| Layer | Technology |
-|---|---|
-| API | Python · Flask · REST |
-| Auth | JWT |
-| Database | PostgreSQL · SQLAlchemy |
-| Jobs | APScheduler |
-| Email | Brevo SMTP |
-| Payments | Lemon Squeezy |
-| Hosting | Render · Linux |
-
-[Repository](https://github.com/Mohammed18-19/InvoiceBot) · [Live](https://getinvoicebot.com)
+**[Portfolio](https://github.com/Mohammed18-19/Portfolio)** — Personal site built to practice frontend integration alongside backend work.
 
 ---
 
 ## Stack
 
 ```
-Language      Python · SQL
-Framework     Flask
-Database      PostgreSQL · SQLAlchemy
-Auth          JWT
-Jobs          APScheduler
-Infra         Linux · Docker · Git
-Deployment    Render
+Python · Flask · PostgreSQL · SQLAlchemy
+REST APIs · JWT · APScheduler
+Linux · Docker · Git · Render
 ```
 
 ---
 
-## Current Focus
+## Where I'm going
 
-- PostgreSQL internals — indexing, query planning, EXPLAIN ANALYZE
-- Docker — multi-stage builds, production container workflows
-- System design — job queue reliability, idempotency, at-least-once delivery
-- German — targeting B2, TELC B1 certified June 2026
+I'm deepening my understanding of how backend systems behave under real conditions — query performance, job reliability, deployment architecture, failure modes. I want to work on systems where those things matter.
 
----
-
-<div align="center">
-
-[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Mohammed18-19&show_icons=true&hide_border=true&title_color=3B82F6&icon_color=8B5CF6&text_color=64748B&bg_color=00000000&hide=stars&count_private=true&hide_rank=true)](https://github.com/Mohammed18-19)
-
-</div>
+TELC B1 German certified (June 2026). Targeting B2. Open to backend engineering roles and Ausbildung Fachinformatiker Anwendungsentwicklung in Germany from 2026.
 
 ---
 
 <div align="center">
-  <sub>Open to backend engineering roles and Ausbildung Fachinformatiker Anwendungsentwicklung in Germany · <a href="mailto:aintomar.mohammed200@gmail.com">aintomar.mohammed200@gmail.com</a></sub>
+
+[![Email](https://img.shields.io/badge/aintomar.mohammed200@gmail.com-111827?style=flat&logo=gmail&logoColor=EA4335)](mailto:aintomar.mohammed200@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-111827?style=flat&logo=linkedin&logoColor=3B82F6)](https://linkedin.com/in/mohammed-ain-tomar)
+[![InvoiceBot](https://img.shields.io/badge/getinvoicebot.com-111827?style=flat&logoColor=10B981)](https://getinvoicebot.com)
+
 </div>

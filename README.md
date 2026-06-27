@@ -1,95 +1,87 @@
-<div align="center">
+# Mohammed Ain Tomar
 
-<img src="https://raw.githubusercontent.com/Mohammed18-19/Mohammed18-19/main/assets/AINTORA_SYSTEMS_logo.png" width="120" alt="AINTORA SYSTEMS"/>
+**Backend Developer · Python · Flask · PostgreSQL · REST APIs**
 
-# Mohammed Aintomar
-
-### Founder & CEO — AINTORA SYSTEMS
-
-*"Your smartest employee never clocks out."*
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Mohammed_Aintomar-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/mohammed-aintomar-a94a37262)
-[![Location](https://img.shields.io/badge/Kenitra-Morocco-c44fd4?style=flat)](https://github.com/Mohammed18-19)
-[![Status](https://img.shields.io/badge/Status-Building-00c6d4?style=flat)](https://github.com/Mohammed18-19)
-[![Age](https://img.shields.io/badge/Age-20-534AB7?style=flat)](https://github.com/Mohammed18-19)
-
-</div>
+I build production web applications and automate real business processes.
+Currently applying for **Ausbildung Fachinformatiker Anwendungsentwicklung** in Germany.
 
 ---
 
-## 🚀 What I build
+## About Me
 
-I build AI systems that replace manual work — silently, reliably, 24/7.
-
-At 20, I founded **AINTORA SYSTEMS** from Morocco with one mission:  
-make AI automation accessible to every local business, not just Silicon Valley startups.
-
----
-
-## 📦 Current projects
-
-| Project | Description | Stack | Status |
-|---|---|---|---|
-| **[BookBot](https://github.com/Mohammed18-19/Chatboot-Saas)** | WhatsApp AI booking engine for salons & clinics | Python · Flask · Gemini · Meta API | 🟢 Live |
-| **AINTORA OS** | AI operating system for local SMEs | Python · PostgreSQL · n8n | 🔨 Building |
-| **Ausbildung Agent** | AI-powered job search dashboard | React · Vite · Gemini API | 🔨 Building |
+- 🔧 Self-taught backend developer based in **Kenitra, Morocco**
+- 🚀 Founder of **AINTORA SYSTEMS** — built and deployed [InvoiceBot](https://getinvoicebot.com), a live SaaS product
+- 💼 Former IT intern at **Maroc Telecom**
+- 📚 Studied Electrical Engineering & Computer Science at **Université Ibn Tofail**
+- 🇩🇪 Relocating to Germany — Deutsch B1 (TELC, June 2026)
 
 ---
 
-## 🛠️ Stack
+## Current Focus
+
+```
+Building production-grade backend systems with Python, Flask, and PostgreSQL
+Learning advanced SQL, system design, and Linux administration
+Improving German to B2
+```
+
+---
+
+## Tech Stack
+
+**Languages**
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=postgresql&logoColor=white)
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat&logo=css3&logoColor=white)
 
 **Backend**
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white)
-![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?style=flat)
+![Django](https://img.shields.io/badge/Django-092E20?style=flat&logo=django&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)
+![REST API](https://img.shields.io/badge/REST_API-009688?style=flat)
 
-**AI & Automation**
+**Tools & Deployment**
 
-![Gemini](https://img.shields.io/badge/Gemini_API-4285F4?style=flat&logo=google&logoColor=white)
-![n8n](https://img.shields.io/badge/n8n-EA4B71?style=flat&logo=n8n&logoColor=white)
-![WhatsApp](https://img.shields.io/badge/WhatsApp_Cloud_API-25D366?style=flat&logo=whatsapp&logoColor=white)
-
-**Frontend & Deploy**
-
-![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)
-![Railway](https://img.shields.io/badge/Railway-0B0D0E?style=flat&logo=railway&logoColor=white)
-![Neon](https://img.shields.io/badge/Neon_DB-00c6d4?style=flat)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
+![Render](https://img.shields.io/badge/Render-46E3B7?style=flat&logo=render&logoColor=black)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 
 ---
 
-## 💼 Experience
+## Featured Project — InvoiceBot
 
-```
-Founder & CEO · AINTORA SYSTEMS · 2024 – Present
-Kenitra, Morocco · Remote-first
+> A production SaaS product that fully automates invoice reminder workflows for small businesses.
 
-→ Built BookBot: WhatsApp AI booking engine deployed for
-  salons and clinics across Morocco
-→ Multi-tenant SaaS architecture with per-client
-  WhatsApp credentials and dynamic webhook routing
-→ LLM integration: Gemini API for natural language
-  booking flows in Arabic, Darija, French & English
-→ Expanding: Morocco → Gulf → Germany
-```
+**Stack:** Python · Flask · PostgreSQL · APScheduler · Brevo SMTP · Lemon Squeezy · Render
+
+- Automated end-to-end email reminder workflow — no manual follow-up required
+- Relational database schema managing user accounts, invoice status, and reminder cycles
+- Subscription and payment lifecycle via Lemon Squeezy Payments API
+- Deployed on a Linux-based server (Render) with continuous production maintenance
+
+🔗 [getinvoicebot.com](https://getinvoicebot.com) · [Repository](https://github.com/Mohammed18-19/invoicebot)
 
 ---
 
-## 🎯 Mission
+## Currently Learning
 
-Make AI automation accessible to every local business —  
-not just funded startups.
-
-**Morocco → Gulf → Europe.**
+- Advanced PostgreSQL — query optimization, indexing strategies
+- Docker & container-based deployments
+- German language — targeting B2
 
 ---
 
-<div align="center">
+## Contact
 
-📍 Kenitra, Morocco &nbsp;·&nbsp; 🌐 aintora.ai &nbsp;·&nbsp; ✉️ aintomar.mohamed19@gmail.com
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/mohammed-aintomar)
+[![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:aintomar.mohammed200@gmail.com)
 
-*Building in public. Shipping real products. Starting from zero.*
+---
 
-</div>
+*Open to Ausbildung opportunities in Germany starting 2025/2026.*

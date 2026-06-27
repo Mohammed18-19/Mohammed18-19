@@ -1,87 +1,161 @@
-# Mohammed Ain Tomar
+<div align="center">
+  <img src="assets/banner.png" width="100%" alt="Mohammed Ain Tomar — Backend Engineer"/>
+</div>
 
-**Backend Developer · Python · Flask · PostgreSQL · REST APIs**
+<br/>
 
-I build production web applications and automate real business processes.
-Currently applying for **Ausbildung Fachinformatiker Anwendungsentwicklung** in Germany.
+<div align="center">
+
+<a href="https://getinvoicebot.com">
+<img src="https://img.shields.io/badge/getinvoicebot.com-live-10B981?style=flat&labelColor=111827" alt="InvoiceBot"/>
+</a>
+
+<a href="mailto:contact@aintora.com">
+<img src="https://img.shields.io/badge/contact@aintora.com-111827?style=flat&logo=gmail&logoColor=EA4335" alt="Email"/>
+</a>
+
+<a href="https://linkedin.com/in/mohammed-ain-tomar">
+<img src="https://img.shields.io/badge/LinkedIn-111827?style=flat&logo=linkedin&logoColor=3B82F6" alt="LinkedIn"/>
+</a>
+
+</div>
 
 ---
 
-## About Me
+# Backend Engineer
 
-- 🔧 Self-taught backend developer based in **Kenitra, Morocco**
-- 🚀 Founder of **AINTORA SYSTEMS** — built and deployed [InvoiceBot](https://getinvoicebot.com), a live SaaS product
-- 💼 Former IT intern at **Maroc Telecom**
-- 📚 Studied Electrical Engineering & Computer Science at **Université Ibn Tofail**
-- 🇩🇪 Relocating to Germany — Deutsch B1 (TELC, June 2026)
+I build backend systems that automate real business operations through REST APIs, relational databases, background job architectures, and production deployments on Linux.
+
+Based in Morocco. Targeting backend engineering opportunities in Germany from 2026.
+
+I enjoy designing software that is reliable, maintainable, and built to solve real business problems.
 
 ---
 
-## Current Focus
+# Featured Project — InvoiceBot
 
+> Production SaaS that automates invoice reminder workflows for small businesses.
+
+🌐 **Live:** https://getinvoicebot.com
+
+Small businesses lose revenue because invoice follow-ups are often manual, inconsistent, and time-consuming.
+
+InvoiceBot removes that entire workflow.
+
+Once an invoice is created, reminder scheduling, payment tracking, subscription management, and email delivery happen automatically without human intervention.
+
+---
+
+## Architecture
+
+```text
+                         ┌─────────────────────────────┐
+                         │        Flask REST API        │
+Client ── HTTPS ────────►│                             │
+                         │ Authentication              │
+                         │ Business Logic              │
+                         │ Invoice Management          │
+                         │ Payment Webhooks            │
+                         └──────────┬──────────────────┘
+                                    │
+              ┌─────────────────────┼──────────────────┐
+              ▼                     ▼                  ▼
+       ┌─────────────┐    ┌──────────────────┐  ┌──────────────────┐
+       │ PostgreSQL  │    │ APScheduler      │  │ Lemon Squeezy    │
+       │             │    │                  │  │                  │
+       │ Users       │    │ Reminder Jobs    │  │ Subscriptions    │
+       │ Invoices    │    │ Polling Engine   │  │ Billing Events   │
+       │ Reminders   │    │ Status Checks    │  │ Webhooks         │
+       └─────────────┘    └────────┬─────────┘  └──────────────────┘
+                                   │
+                                   ▼
+                          ┌──────────────────┐
+                          │ Brevo SMTP       │
+                          │                  │
+                          │ Transactional    │
+                          │ Email Delivery   │
+                          └──────────────────┘
+
+                    Hosted on Render · Linux · Production
 ```
-Building production-grade backend systems with Python, Flask, and PostgreSQL
-Learning advanced SQL, system design, and Linux administration
-Improving German to B2
-```
 
 ---
 
-## Tech Stack
+## Engineering Decisions
 
-**Languages**
+### APScheduler over cron
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=postgresql&logoColor=white)
-![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat&logo=css3&logoColor=white)
+The reminder engine requires direct access to application state and database connections. Running APScheduler inside the Flask application eliminates process startup overhead while allowing scheduled jobs to reuse existing SQLAlchemy sessions.
 
-**Backend**
+### Lemon Squeezy over Stripe
 
-![Flask](https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white)
-![Django](https://img.shields.io/badge/Django-092E20?style=flat&logo=django&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)
-![REST API](https://img.shields.io/badge/REST_API-009688?style=flat)
+Stripe merchant payouts are unavailable in Morocco. Lemon Squeezy operates as a Merchant of Record, handling taxation, subscriptions, and payouts across MENA without requiring a foreign company.
 
-**Tools & Deployment**
+### PostgreSQL enum-based invoice states
 
-![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
-![Render](https://img.shields.io/badge/Render-46E3B7?style=flat&logo=render&logoColor=black)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+Invoice lifecycle states (`draft → sent → reminded → overdue → paid`) are modeled as PostgreSQL enums with controlled application-level transitions. This guarantees deterministic reminder scheduling and prevents invalid state changes.
+
+### SMTP abstraction
+
+Brevo SMTP provides inexpensive transactional email delivery at the current scale. The email layer is abstracted, making migration to another provider straightforward if future volume requires it.
 
 ---
 
-## Featured Project — InvoiceBot
+# Technologies I Work With
 
-> A production SaaS product that fully automates invoice reminder workflows for small businesses.
-
-**Stack:** Python · Flask · PostgreSQL · APScheduler · Brevo SMTP · Lemon Squeezy · Render
-
-- Automated end-to-end email reminder workflow — no manual follow-up required
-- Relational database schema managing user accounts, invoice status, and reminder cycles
-- Subscription and payment lifecycle via Lemon Squeezy Payments API
-- Deployed on a Linux-based server (Render) with continuous production maintenance
-
-🔗 [getinvoicebot.com](https://getinvoicebot.com) · [Repository](https://github.com/Mohammed18-19/invoicebot)
-
----
-
-## Currently Learning
-
-- Advanced PostgreSQL — query optimization, indexing strategies
-- Docker & container-based deployments
-- German language — targeting B2
+| Layer           | Technology              |
+| --------------- | ----------------------- |
+| Language        | Python                  |
+| Backend         | Flask                   |
+| Database        | PostgreSQL · SQLAlchemy |
+| Authentication  | JWT                     |
+| Background Jobs | APScheduler             |
+| APIs            | REST                    |
+| Email           | Brevo SMTP              |
+| Payments        | Lemon Squeezy           |
+| Infrastructure  | Linux · Docker · Git    |
+| Deployment      | Render                  |
 
 ---
 
-## Contact
+# Current Focus
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/mohammed-aintomar)
-[![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:aintomar.mohammed200@gmail.com)
+* PostgreSQL internals (indexing, query planning, EXPLAIN ANALYZE)
+* Docker and production container workflows
+* System design for distributed backend architectures
+* German language (TELC B1 → targeting B2)
 
 ---
 
-*Open to Ausbildung opportunities in Germany starting 2025/2026.*
+# GitHub Activity
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=Mohammed18-19&show_icons=true&hide_border=true&title_color=3B82F6&icon_color=8B5CF6&text_color=64748B&bg_color=00000000&hide=stars&count_private=true&hide_rank=true"/>
+
+<br/>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mohammed18-19&layout=compact&hide_border=true&title_color=3B82F6&text_color=64748B&bg_color=00000000"/>
+
+</div>
+
+---
+
+# Featured Repositories
+
+* 🚀 **InvoiceBot** — Production SaaS for automated invoice reminder workflows
+* 💼 **Portfolio** — Personal portfolio showcasing backend engineering projects
+
+---
+
+<div align="center">
+
+<a href="https://github.com/Mohammed18-19/InvoiceBot">InvoiceBot</a> • <a href="https://github.com/Mohammed18-19/Portfolio">Portfolio</a> • <a href="https://linkedin.com/in/mohammed-ain-tomar">LinkedIn</a> • <a href="mailto:contact@aintora.com">Email</a>
+
+</div>
+
+<br/>
+
+<div align="center">
+<sub>Open to Backend Engineering roles and Ausbildung Fachinformatiker Anwendungsentwicklung opportunities in Germany.</sub>
+</div>

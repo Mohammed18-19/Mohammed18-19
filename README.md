@@ -1,3 +1,5 @@
+<p align="center"><img src="./avatar/moha.jpeg" width="150" style="border-radius:50%;" alt="Mohammed Aintomar"></p>
+
 <div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:7C3AED,100:06B6D4&height=180&section=header&text=Mohammed%20Aintomar&fontSize=48&fontAlignY=38&animation=fadeIn&fontColor=white&desc=AI%20Engineer%20%C2%B7%20RAG%20%C2%B7%20Backend&descAlignY=62&descSize=18" width="100%" />

@@ -5,6 +5,9 @@ on:
     - cron: "0 18 * * *"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -16,7 +19,7 @@ jobs:
           # A PAT (Personal Access Token) with `repo` scope is required.
           # Add it as a repository secret named TOKEN:
           # Settings → Secrets and variables → Actions → New repository secret
-          token: ${{ secrets.TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Write settings.json
         run: |
@@ -42,7 +45,7 @@ jobs:
 
       - uses: yoshi389111/github-profile-3d-contrib@0.7.1
         env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # Replace Mohammed18-19 with your GitHub username
           USERNAME: Mohammed18-19
 
@@ -52,5 +55,5 @@ jobs:
           git config user.email github-actions@github.com
           git add -A .
           git commit -m "Update 3D contribution graph" || exit 0
-          git remote set-url origin https://x-access-token:${{ secrets.TOKEN }}@github.com/Mohammed18-19/Mohammed18-19.git
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/Mohammed18-19/Mohammed18-19.git
           git push origin HEAD:main --force

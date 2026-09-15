@@ -9,7 +9,7 @@
 <p align="center">
 <a href="https://github.com/Mohammed18-19"><img src="https://img.shields.io/badge/GitHub-Mohammed18--19-7C3AED?style=for-the-badge&logo=github&logoColor=white" /></a>
 <a href="https://www.linkedin.com/in/mohammed-aintomar-a94a37262/"><img src="https://img.shields.io/badge/LinkedIn-Mohammed%20Aintomar-06B6D4?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-<a href="mailto:aintomar.mohammed200@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-A78BFA?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+<a href="mailto:aintoma.mohamed19@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-A78BFA?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 </p>
 
 </div>
@@ -207,7 +207,7 @@ I'm interested in contributing to projects around:
 <img src="https://img.shields.io/badge/LinkedIn-Mohammed%20Aintomar-0A66C2?style=for-the-badge&logo=linkedin" />
 </a>
 
-<a href="mailto:aintomar.mohammed@gmail.com">
+<a href="mailto:aintoma.mohamed19@gmail.com">
 <img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
 </a>
 

@@ -2,9 +2,9 @@
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:7C3AED,100:06B6D4&height=180&section=header&text=Mohammed%20Aintomar&fontSize=48&fontAlignY=38&animation=fadeIn&fontColor=white&desc=AI%20Engineer%20%C2%B7%20RAG%20%C2%B7%20Backend&descAlignY=62&descSize=18" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:7C3AED,100:06B6D4&height=180&section=header&text=Mohammed%20Aintomar&fontSize=48&fontAlignY=38&animation=fadeIn&fontColor=white&desc=AI%20Software%20Engineer%20%C2%B7%20LLM%20%C2%B7%20RAG%20%C2%B7%20Backend&descAlignY=62&descSize=18" width="100%" />
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=21&duration=2200&pause=600&color=A78BFA&center=true&vCenter=true&width=700&lines=AI+Engineer+%7C+RAG+%7C+Backend;Building+reliable+LLM-powered+systems;Retrieval+%C2%B7+Reranking+%C2%B7+Evaluation;Python+%C2%B7+PostgreSQL+%C2%B7+pgvector+%C2%B7+Docker" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=21&duration=2200&pause=600&color=A78BFA&center=true&vCenter=true&width=700&lines=AI+Software+Engineer+%7C+LLM+%7C+RAG;Building+practical+LLM-powered+systems;Retrieval+%C2%B7+Reranking+%C2%B7+Evaluation;Tool+Calling+%C2%B7+Agents+%C2%B7+LangGraph" />
 
 <p align="center">
 <a href="https://github.com/Mohammed18-19"><img src="https://img.shields.io/badge/GitHub-Mohammed18--19-7C3AED?style=for-the-badge&logo=github&logoColor=white" /></a>
@@ -18,7 +18,7 @@
 
 ## 👋 About Me
 
-I'm **Mohammed Aintomar**, an AI Engineer focused on **RAG systems, LLM applications, and backend engineering**.
+I'm **Mohammed Aintomar**, an AI Software Engineer focused on **LLM systems, RAG, agentic AI, and backend engineering**.
 
 I enjoy turning AI concepts into practical systems — from document ingestion and embeddings to hybrid retrieval, reranking, citations, evaluation, and production-oriented APIs.
 
@@ -60,7 +60,7 @@ Currently focused on:
 
 **AI-powered codebase intelligence system**
 
-CodeAtlas is a portfolio-focused AI system for exploring and asking questions about source-code repositories using retrieval and LLMs.
+CodeAtlas is an AI codebase intelligence system for exploring and asking questions about source-code repositories using RAG and LLMs.
 
 - Repository ingestion from ZIP files and GitHub repositories
 - AST-aware source-code chunking
@@ -136,6 +136,17 @@ The contribution strengthens validation around image headers, image size, and TL
 </div>
 
 ---
+
+
+## 🤖 Agentic AI
+
+Hands-on practice with:
+
+- Function / Tool Calling
+- ReAct Agents
+- Agent Memory
+- Task Decomposition
+- LangGraph orchestration
 
 ## 📊 GitHub Statistics
 
